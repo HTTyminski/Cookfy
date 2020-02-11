@@ -1,0 +1,1248 @@
+<!doctype html>
+<html ⚡ lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="description" content="This is the AMP Boilerplate.">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- Import other AMP Extensions here -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+    <script async custom-element="amp-image-lightbox"
+        src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+    <script async custom-element="amp-lightbox-gallery"
+        src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    <script async custom-element="amp-social-share"
+        src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+
+
+
+
+
+    <style amp-custom>
+        /* Add your styles here */
+        :root {
+            --lipstick: #e82147;
+            --white: white;
+        }
+
+        /* .conteudo {
+            height: 50vh;
+        } */
+
+        .Text-Style {
+            font-family: PlayfairDisplay;
+            font-size: 20.5px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.32;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--lipstick);
+        }
+
+        .Retangulo-2 {
+            height: 386px;
+            background-color: #ffdbbc;
+            background-image: url(assets/images/assets_svg/Elemento_2.svg);
+            background-repeat: no-repeat;
+            background-size: 138px 137px;
+            background-position-x: 4%;
+            background-position-y: 65%;
+        }
+
+
+        .Retangulo-1 {
+            padding-left: 21px;
+            width: 366px;
+            height: 30px;
+            border-radius: 16.5px;
+            box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+            background-color: white;
+            border: none;
+            background-image: url(assets/images/assets_svg/Lupa.svg);
+            background-repeat: no-repeat;
+            background-size: 17px 17px;
+            background-position-x: 94%;
+            background-position-y: 49%;
+            outline: none;
+        }
+
+        .logo_top {
+            width: 108px;
+            height: 40px;
+            background-image: url(assets/images/assets_svg/Logo_Cookfy.svg);
+            background-repeat: no-repeat;
+            background-size: 68px 27px;
+            background-position-x: 100%;
+            background-position-y: 39%;
+
+        }
+
+        .Retangulo-1::placeholder {
+            width: 88.5px;
+            height: 10.5px;
+            opacity: 0.18;
+            font-family: Roboto;
+            font-size: 10px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: left;
+            color: #000000;
+        }
+
+        .Cookfy {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 24px;
+        }
+
+        .receitas {
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            padding-top: 24px;
+        }
+
+        .welcome {
+            display: flex;
+            justify-content: center;
+        }
+
+        .text-style-1 {
+            margin-top: 20px;
+            width: 47.5px;
+            height: 27px;
+            font-family: PlayfairDisplay;
+            font-size: 27.5px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 0;
+            letter-spacing: normal;
+            text-align: left;
+            color: #000000;
+        }
+
+        .text-style-2 {
+            padding-left: 15px;
+            color: var(--lipstick);
+            font-family: PlayfairDisplay;
+            font-size: 27.5px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 0;
+            letter-spacing: normal;
+        }
+
+        .text-style-3 {
+            color: #e82147;
+            width: 158px;
+            height: 18px;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-align: left;
+        }
+
+        .text-style-4 {
+            color: #e82147;
+            width: 240px;
+            height: 52px;
+            font-family: PlayfairDisplay;
+            font-size: 28px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-align: left;
+        }
+
+
+        .Marina {
+            display: flex;
+            width: auto;
+            height: 100px;
+            font-family: Roboto;
+            font-size: 8px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.31;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--lipstick);
+            padding-right: 50px;
+        }
+
+        .Retngulo-4 {
+            width: 30px;
+            height: 30px;
+            border-radius: 16.5px;
+            box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+            background-color: var(--lipstick);
+            position: relative;
+        }
+
+        .Pesquise-alguma-receita {
+            width: 88.5px;
+            height: 10.5px;
+            opacity: 0.18;
+            font-family: Roboto;
+            font-size: 8px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.31;
+            letter-spacing: normal;
+            text-align: left;
+            color: #000000;
+        }
+
+        .Fill-333 {
+            width: 302.1px;
+            height: 220.5px;
+            -webkit-filter: blur(2.1px);
+            filter: blur(2.1px);
+            background-color: var(--lipstick);
+        }
+
+        .Bem-vindo-de-volta-Marina-Wedderhoff {
+            width: 266.5px;
+            height: 0px;
+            font-family: PlayfairDisplay;
+            font-size: 28px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.34;
+            letter-spacing: normal;
+            text-align: left;
+            color: #000000;
+        }
+
+        .Contribuio-da-comunidade-Ceviche-de-peixe-branco-Por-Michel-Filipe {
+            width: 158px;
+            height: 18px;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-align: left;
+            color: #0d0d0d;
+        }
+
+        .louis {
+            text-align-last: center;
+            height: 249px;
+            width: 436px;
+            background-image: url(assets/images/assets_svg/Elemento_1.svg);
+            background-repeat: no-repeat;
+            background-size: 312px 277px;
+            background-position-x: 56px;
+            background-position-y: -22px;
+            position: absolute;
+        }
+
+        .louis_painel {
+            width: 302px;
+            height: 220px;
+        }
+
+        .louis-hansel {
+            top: 23px;
+            left: 50px;
+        }
+
+        figure:hover .louisBtn {
+            display: block;
+            cursor: pointer;
+        }
+
+        .stars {
+            margin-top: 2px;
+
+        }
+
+        /* modal */
+
+        .modal {
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            width: 732px;
+            height: 332.5px;
+            margin: 10% auto;
+            box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+        }
+
+        .modal-body {
+            display: flex;
+            background: #fff;
+            box-shadow: 0px 0px 0px 9px rgba(0, 0, 0, 0.3);
+        }
+
+        .Retngulo-955 {
+            width: 732px;
+            height: 332.5px;
+            opacity: 0.53;
+            background-color: #797979;
+        }
+
+        .Retngulo-956 {
+            padding: 20px 30px;
+            width: 270px;
+            height: 317px;
+            background-color: var(--white);
+        }
+
+        .Retngulo-957 {
+            margin-top: 30px;
+            width: 65.5px;
+            height: 24px;
+            border-radius: 19px;
+            border: solid 0.5px var(--lipstick);
+            background-color: white;
+            background-image: url(assets/images/assets_png/Like@3x.png);
+            background-repeat: no-repeat;
+            background-size: 10px 10px;
+            background-position-x: 22%;
+            background-position-y: 50%;
+            outline: none;
+        }
+
+        .curtir {
+            padding-left: 23px;
+            width: 17px;
+            height: 9.5px;
+            font-family: Roboto;
+            font-size: 10px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 0.36;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--lipstick);
+        }
+
+        .oPeixe {
+            padding-top: 30px;
+            width: 131.5px;
+            height: 32px;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-align: left;
+        }
+
+        .fechar {
+            float: right;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .Michel {
+            color: var(--lipstick);
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .peixe {
+            color: #0d0d0d;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .ceviche {
+            width: 180.5px;
+            height: 139.5px;
+            font-family: Roboto;
+            font-size: 9px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.44;
+            letter-spacing: normal;
+            text-align: left;
+            color: #555455;
+        }
+
+        .Caminho-13 {
+            margin-top: 17%;
+            margin-left: 15px;
+            width: 10px;
+            height: 10px;
+        }
+
+        .Caminho-14 {
+            margin-top: 7%;
+            margin-left: 15px;
+            width: 10px;
+            height: 10px;
+        }
+
+        .Ver-receita {
+            width: 58.5px;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 5.00;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--lipstick);
+            padding-left: 5px;
+        }
+
+        .Retngulo-955 {
+            width: 732px;
+            height: 332.5px;
+            opacity: 0.53;
+            background-color: #797979;
+        }
+
+
+        /* end modal */
+        .Retangulo-12 {
+            width: 225px;
+            height: 41.5px;
+            background-color: var(--white);
+        }
+
+        .louisBtn {
+            display: none;
+            bottom: 0px;
+            text-align: left;
+            background-color: white;
+            width: 100%;
+            z-index: 1;
+            height: 50px;
+            position: absolute;
+            list-style: none;
+            border: none;
+            transition: 0.3s;
+            outline: none;
+        }
+
+        .Ver-foto {
+            margin-left: 10px;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.31;
+            letter-spacing: normal;
+            color: var(--lipstick);
+            padding-left: 39´x;
+        }
+
+        .Experimente {
+            height: 16vh;
+            font-family: PlayfairDisplay;
+            font-size: 28px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.34;
+            letter-spacing: normal;
+            text-align: center;
+            color: #000000;
+            background-image: url(assets/images/assets_png/Elemento_7@3x.png);
+            background-repeat: no-repeat;
+            background-size: 68px 55px;
+            background-position-x: 95%;
+            background-position-y: 100%;
+        }
+
+
+        /* carossel */
+        .karly {
+            width: 319px;
+            height: 155px;
+            object-fit: contain;
+            box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.16);
+            text-align: center;
+        }
+
+        .Adicionado {
+            width: 70.5px;
+            height: 10.5px;
+            font-family: Roboto;
+            font-size: 8px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.31;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--lipstick);
+        }
+
+        .Iogurte {
+            width: 155px;
+            height: 45px;
+            font-family: PlayfairDisplay;
+            font-size: 16px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.34;
+            letter-spacing: normal;
+            text-align: left;
+            color: #000000;
+        }
+
+        .Dificil {
+            width: 21px;
+            height: 10.5px;
+            font-family: Roboto;
+            font-size: 8px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.31;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--lipstick);
+        }
+
+        .Retangulo-5 {
+            width: 30px;
+            height: 30px;
+            border-radius: 16.5px;
+            box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+            background-color: var(--white);
+            border: none;
+            outline: none;
+            background-image: url(assets/images/assets_png/Seta_esquerda@3x.png);
+            background-repeat: no-repeat;
+            background-size: 10px 10px;
+            background-position-x: 50%;
+            background-position-y: 50%;
+        }
+
+        .Retangulo-5:hover {
+            cursor: pointer;
+            box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+            background-color: var(--lipstick);
+            background-image: url(assets/images/assets_svg/arrow_left_photoshop.gif);
+            background-repeat: no-repeat;
+            background-size: 10px 10px;
+            background-position-x: 50%;
+            background-position-y: 50%;
+        }
+
+        .Retangulo-6 {
+            width: 30px;
+            height: 30px;
+            border-radius: 16.5px;
+            box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+            background-color: var(--white);
+            border: none;
+            outline: none;
+            background-image: url(assets/images/assets_png/Seta_direita@3x.png);
+            background-repeat: no-repeat;
+            background-size: 10px 10px;
+            background-position-x: 50%;
+            background-position-y: 50%;
+            margin-left: 10px;
+        }
+
+        .Retangulo-6:hover {
+            cursor: pointer;
+            box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+            background-color: var(--lipstick);
+            background-image: url(assets/images/assets_svg/arrow_photoshop.gif);
+            background-repeat: no-repeat;
+            background-size: 10px 10px;
+            background-position-x: 50%;
+            background-position-y: 50%;
+        }
+
+        .display_flex {
+            display: flex;
+        }
+
+        .box_iogurte {
+            margin-right: 30px;
+            box-shadow: 0 1.5px 36px 0 rgba(0, 0, 0, 0.16);
+        }
+
+
+
+
+        .estrela_opct {
+            opacity: 0.18;
+        }
+
+        .elemento_503x {
+            margin-top: 116px;
+        }
+
+        .espaçador {
+            text-align: center;
+            height: 13vh;
+        }
+
+        .espaçador2 {
+            height: 5vh;
+        }
+
+
+
+        .gastronomico {
+            height: 38.5px;
+            font-family: PlayfairDisplay;
+            font-size: 28px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.34;
+            letter-spacing: normal;
+            text-align: center;
+            color: #000000;
+        }
+
+        .mundo {
+            height: 27vh;
+            text-align: center;
+            background-image: url(assets/images/assets_svg/Elemento_4.svg);
+            background-repeat: no-repeat;
+            background-size: 84px 84px;
+            background-position-x: 6%;
+            background-position-y: 25%;
+        }
+
+        /* fim gastronomico */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* gastronomico2 */
+        .cozinha_off {
+            padding-left: 47%;
+            width: 51.5px;
+            height: 21.5px;
+            font-family: PlayfairDisplay;
+            font-size: 16px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.34;
+            letter-spacing: normal;
+            text-align: left;
+            color: #969090;
+        }
+
+        .cozinha_hover {
+            color: var(--lipstick);
+        }
+
+        .cozinha_on {
+            color: var(--lipstick);
+        }
+
+        .patisserie_off {
+            padding-left: 47%;
+            width: 51.5px;
+            height: 21.5px;
+            font-family: PlayfairDisplay;
+            font-size: 16px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.34;
+            letter-spacing: normal;
+            text-align: left;
+            color: #969090;
+        }
+
+        .patisserie_hover {
+            color: var(--lipstick);
+        }
+
+        .patisserie_on {
+            color: var(--lipstick);
+        }
+
+        .drinks_off {
+            padding-left: 47%;
+            width: 51.5px;
+            height: 21.5px;
+            font-family: PlayfairDisplay;
+            font-size: 16px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.34;
+            letter-spacing: normal;
+            text-align: left;
+            color: #969090;
+        }
+
+        .drinks_hover {
+            color: var(--lipstick);
+        }
+
+        .drinks_on {
+            color: var(--lipstick);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .sebastian {
+            width: 319px;
+            height: 213.5px;
+            object-fit: contain;
+        }
+
+        .button_img {
+            display: flex;
+            justify-content: center;
+            background-image: url(assets/images/assets_svg/Elemento_6.svg);
+            background-repeat: no-repeat;
+            background-size: 86px 78px;
+            background-position-x: 95%;
+            background-position-y: 50%;
+        }
+
+        .Retangulo-9 {
+            width: 225px;
+            height: 64.5px;
+            border: solid 0.5px var(--lipstick);
+            background-color: white;
+            box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+        }
+
+        .Retangulo-10 {
+            width: 225px;
+            height: 64.5px;
+            box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.16);
+            background-color: white;
+        }
+
+        .retangulo-cozinha {
+            width: 225px;
+            height: 64.5px;
+            border: solid 0.5px #f0f0f0;
+            background-color: white;
+            background-image: url(assets/images/assets_png/Cozinha.png);
+            background-repeat: no-repeat;
+            background-size: 32px 32px;
+            background-position-x: 33%;
+            background-position-y: 50%;
+        }
+
+        .retangulo-patisserie {
+            width: 225px;
+            height: 64.5px;
+            border: solid 0.5px #f0f0f0;
+            background-color: white;
+            background-image: url(assets/images/assets_png/Patisserie.png);
+            background-repeat: no-repeat;
+            background-size: 32px 32px;
+            background-position-x: 33%;
+            background-position-y: 50%;
+        }
+
+        .retangulo-drinks {
+            width: 225px;
+            height: 64.5px;
+            border: solid 0.5px #f0f0f0;
+            background-color: white;
+            background-image: url(assets/images/assets_png/Drinks.png);
+            background-repeat: no-repeat;
+            background-size: 32px 32px;
+            background-position-x: 33%;
+            background-position-y: 50%;
+        }
+
+        .pdg_ret {
+            padding-bottom: 10px;
+        }
+
+        .pdgr_ret {
+            padding-right: 10px;
+        }
+
+        /* fim gastronomico2 */
+        /* footer */
+        .sub_title {
+            margin-left: 10px;
+            font-weight: normal;
+            width: 143px;
+            height: 9px;
+            font-family: HelveticaNeue;
+            font-size: 9px;
+            font-weight: medium;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 3.43;
+            letter-spacing: normal;
+            text-align: left;
+            color: black;
+
+        }
+
+        .Cookfy2 {
+            width: 67.5px;
+            height: 27px;
+        }
+
+        .caminho-68 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .rodape {
+            width: 100%;
+            display: flex;
+            margin-top: 13%;
+            justify-content: space-around;
+            margin-bottom: 4%;
+        }
+
+        .logo {
+            display: flex;
+        }
+
+        footer {
+            display: flex;
+            background-image: url(assets/images/assets_png/Rodapé@3x.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position-x: 100%;
+            background-position-y: 100%;
+        }
+
+        .social-share amp-social-share[type='facebook'] {
+            background-image: url(assets/images/assets_svg/Fb.svg);
+        }
+
+        .social-share amp-social-share[type='facebook']:hover {
+            background-image: url(assets/images/assets_svg/Fb_active.svg);
+        }
+
+        .social-share amp-social-share[type='instagram'] {
+            background-image: url(assets/images/assets_svg/IG.svg);
+        }
+
+        .social-share amp-social-share[type='instagram']:hover {
+            background-image: url(assets/images/assets_svg/IG_active.svg);
+        }
+
+        .social-share amp-social-share[type='Twitter'] {
+            background-image: url(assets/images/assets_svg/twitter.svg);
+        }
+
+        .social-share amp-social-share[type='Twitter']:hover {
+            background-image: url(assets/images/assets_svg/Twitter_active.svg);
+        }
+
+        .social-share amp-social-share[type='linkedin'] {
+            background-image: url(assets/images/assets_svg/Linkedin.svg);
+        }
+
+        .social-share amp-social-share[type='linkedin']:hover {
+            background-image: url(assets/images/assets_svg/Linkedin_active.svg);
+        }
+
+        .social-share amp-social-share[type='pinterest'] {
+            background-image: url(assets/images/assets_svg/Pinterest.svg);
+        }
+
+        .social-share amp-social-share[type='pinterest']:hover {
+            background-image: url(assets/images/assets_svg/Pinterest_active.svg);
+        }
+
+        .social-share amp-social-share {
+            margin-left: 23px;
+            background-color: #ffe0c2;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position-x: 100%;
+            background-position-y: 100%;
+        }
+
+        .social-share {
+            margin-top: 22px;
+        }
+    </style>
+
+
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+
+    <link rel="canonical" href=".">
+    <title>Cookfy</title>
+</head>
+
+<body>
+
+    <header class="Retangulo-2">
+        <div class="Cookfy">
+            <div class="logo_top">
+
+            </div>
+            <div>
+                <input class="Retangulo-1" type="text" placeholder="pesquise alguma receita">
+            </div>
+            <div class="Marina">
+                <p>Marina</p>
+                <amp-img style="margin-left: 15px;" src="assets/images/assets_png/menina1.png" width="30px"
+                    height="30px" alt=""></amp-img>
+                </amp-img>
+
+            </div>
+        </div>
+        <!-- -----------lightbox-------- -->
+        <!-- <button id="modal-btn" on="tap:my-lightbox" class="button">Click Here</button> -->
+        <amp-lightbox id="my-lightbox" layout="nodisplay">
+            <button on="tap:my-lightbox">
+                Open lightbox
+            </button>
+            <div id="my-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <amp-img src="assets/images/louis-hansel-ZwpX0AJ7GV8-unsplash@2x.png" width="569px"
+                            height="357px" alt=""></amp-img>
+                        <div class="Retngulo-956">
+                            <div class="lightbox" on="tap:my-lightbox.close" role="button" tabindex="0">
+                                <amp-img class="fechar" src="assets/images/assets_png/Fechar@3x.png" width="15px"
+                                    height="15px" alt="Fechar">
+                                </amp-img>
+                            </div>
+                            <div class="oPeixe">
+                                <p class="peixe">Ceviche de peixe branco</p>
+                                <p class="Michel">Por Michel Filipe</p>
+                            </div>
+                            <p class="ceviche">O ceviche é um prato de origem peruana feito com cubos de peixe que são
+                                cozidos em uma solução ácida, geralmente caldo de limão. Quando o peixe em contato com o
+                                limão, um processo químico
+                                é iniciado: a proteína do peixe se desnatura e a textura do peixe muda e o peixe fica
+                                mais
+                                saboroso. O segredo para fazer um bom ceviche é a qualidade do ingrediente principal: o
+                                peixe tem que estar bem fresco. Esse prato peruano pode ser feito com salmão, camarões e
+                                alguns
+                                contam até com manga e abacate, e o tradicional é preparado com peixe branco.</p>
+                            <div style="display: flex;">
+                                <button class="Retngulo-957">
+                                    <p class="curtir">curtir</p>
+                                    <!-- <amp-img src="assets/images/assets_png/Like@3x.png" width="7px" height="6px" alt="">
+                                </amp-img> -->
+                                </button>
+                                <amp-img class="Caminho-13" src="assets/images/assets_png/Seta_direita@3x.png"
+                                    width="10px" height="10px" alt="">
+                                </amp-img>
+                                <p class="Ver-receita">Ver-receita</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </amp-lightbox>
+        <!-- -----------fim lightbox-------- -->
+
+        <div class="welcome">
+            <div>
+                <p class="Bem-vindo-de-volta-Marina-Wedderhoff">Bem vindo de volta</p>
+                <p class="text-style-4">Marina
+                    Wedderhoff</p>
+                <p class="Contribuio-da-comunidade-Ceviche-de-peixe-branco-Por-Michel-Filipe ">Contribuição da
+                    comunidade:<br>
+                    Ceviche de peixe branco</p>
+                <p class="text-style-3">Por
+                    Michel
+                    Filipe</p>
+            </div>
+            <div class="louis_painel">
+                <div class="louis">
+                    <figure>
+                        <amp-img src="assets/images/louis-hansel-ZwpX0AJ7GV8-unsplash@3x.png" width="225px"
+                            height="180px" layout="fixed" alt="louis-hansel">
+                            <figcaption class="Retangulo-12">
+                                <button id="modal-btn" on="tap:my-lightbox" class="louisBtn">
+                                    <div style="display: flex;">
+                                        <amp-img class="Caminho-14" src="assets/images/assets_png/Seta_direita@3x.png"
+                                            width="10px" height="10px" alt="">
+                                        </amp-img>
+                                        <p class="Ver-foto">Ver foto</p>
+                                    </div>
+                                </button>
+                            </figcaption>
+                        </amp-img>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <article class="conteudo">
+        <!-- fim Experimente -->
+        <div>
+            <div class="Experimente">
+                <p>
+                    Experimente alguma<br>das últimas receitas
+                </p>
+            </div>
+        </div>
+        <!-- fim Experimente -->
+
+        <!-- receitas -->
+        <div class="receitas">
+            <div class="box_iogurte">
+                <amp-img src="assets/images/iogurte_recortado.png" width="319" height="155" layout="fixed"
+                    alt="iogurte"></amp-img>
+                </amp-img>
+            </div>
+            <div>
+                <div>
+                    <p class="Adicionado">adicionado a 2 dias</p>
+                </div>
+                <div>
+                    <p class="Iogurte">Iogurte de fruta crocante</p>
+                </div>
+                <div class="display_flex">
+                    <p class="Dificil">Dificil</p>
+                    <div class="stars">
+                        <amp-img src="assets/images/assets_png/Estrela@3x.png" width="8" height="8" layout="fixed"
+                            alt="estrela">
+                        </amp-img>
+                        <amp-img src="assets/images/assets_png/Estrela@3x.png" width="8" height="8" layout="fixed"
+                            alt="estrela">
+                        </amp-img>
+                        <amp-img src="assets/images/assets_png/Estrela@3x.png" width="8" height="8" layout="fixed"
+                            alt="estrela">
+                        </amp-img>
+                        <amp-img src="assets/images/assets_png/Estrela@3x.png" width="8" height="8" layout="fixed"
+                            alt="estrela">
+                        </amp-img>
+                        <amp-img class="estrela_opct" src="assets/images/assets_png/Estrela@3x.png" width="8" height="8"
+                            layout="fixed" alt="estrela">
+                        </amp-img>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="">
+                        <button class="Retangulo-5"></button>
+                        <button class="Retangulo-6"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fim receitas -->
+
+        <!-- espaçador -->
+        <div class="espaçador">
+            <amp-img class="elemento_503x" src="assets/images/assets_png/Elemento_5@3x.png" width="79.5" height="8.5"
+                layout="fixed" alt="elemento 530">
+            </amp-img>
+        </div>
+        <!-- fim espaçador -->
+
+        <!-- Entre no mundo gastronômico -->
+        <div class="mundo">
+            <div class="espaçador2"></div>
+            <div class="gastronomico">
+                <p>Entre no mundo gastronômico</p>
+            </div>
+        </div>
+        <!-- fim Entre no mundo gastronômico -->
+
+
+        <div class="button_img">
+            <div class="pdgr_ret">
+                <div class="pdg_ret">
+                    <button class="retangulo-cozinha">
+                        <p class="cozinha_off">Cozinha</p>
+                    </button>
+
+                </div>
+                <div class="pdg_ret">
+                    <button class="retangulo-patisserie">
+                        <p class="patisserie_off">Patisserie</p>
+                    </button>
+                </div>
+                <div class="">
+                    <button class="retangulo-drinks">
+                        <p class="drinks_off">Drinks</p>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="">
+                <!-- png  || jpg-->
+                <div class="">
+                    <amp-img class="sebastian"
+                        src="assets/images/sebastian-coman-photography-dacM7egRw0Y-unsplash@3x.png" width="957"
+                        height="641" layout="responsive" alt="">
+
+                    </amp-img>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <footer>
+        <div class="rodape">
+            <div class="logo">
+                <amp-img class="Cookfy2" src="assets/images/assets_svg/Logo_Cookfy.svg" width="98" height="42"
+                    layout="fixed" alt="Logo">
+                </amp-img>
+                <p class="sub_title">© 2020 Cookfy.</p>
+            </div>
+            <div>
+                <div class="social-share">
+                    <amp-social-share type="facebook" width="20" height="20"></amp-social-share>
+                    <amp-social-share type="instagram" width="20" height="20"></amp-social-share>
+                    <amp-social-share type="twitter" width="20" height="20"></amp-social-share>
+                    <amp-social-share type="linkedin" width="20" height="20"></amp-social-share>
+                    <amp-social-share type="pinterest" width="20" height="20"></amp-social-share>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
