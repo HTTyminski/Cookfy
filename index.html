@@ -1039,7 +1039,7 @@
             border: hidden;
             background-color: transparent;
             cursor: pointer;
-            background-image: url(assets/images/assets_png/menina1.png);
+            background-image: url(assets/images/assets_png/menino.png);
             background-repeat: no-repeat;
             background-size: 46px 46px;
             background-position-x: 0%;
@@ -1149,14 +1149,122 @@
         }
 
         .Retngulo-18 {
-            position: absolute;
             width: 130.5px;
             height: 9px;
             border-radius: 12px;
             background-color: #e82147;
-            margin-left: 16%;
             top: 85%;
         }
+
+        .Retngulo-19 {
+            cursor: pointer;
+            margin-top: 11%;
+            margin-left: 16%;
+            width: 231.5px;
+            height: 34.5px;
+            border-radius: 17.5px;
+            box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+            background-color: var(--lipstick);
+            outline: none;
+            border: hidden;
+        }
+
+        .Assinar-plano-anual {
+            padding: 0px 0px 0px 54px;
+            width: 109.5px;
+            height: 16px;
+            font-family: PlayfairDisplay;
+            font-size: 12px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 0.80;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--white);
+        }
+
+        .reportar {
+            text-decoration: none;
+            margin-bottom: 3%;
+            width: 150px;
+            height: 10.5px;
+            font-family: Roboto;
+            font-size: 8px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.31;
+            letter-spacing: normal;
+            text-align: left;
+            color: #c1bebe;
+            outline: none;
+            border: hidden;
+            background-color: transparent;
+            cursor: pointer;
+            background-image: url(assets/images/assets_png/Bug@3x.png);
+            background-repeat: no-repeat;
+            background-size: 8px 8px;
+            background-position-y: 50%;
+            padding-left: 14px;
+        }
+
+        .alterar {
+            text-decoration: none;
+            margin-bottom: 3%;
+            width: 150px;
+            height: 10.5px;
+            font-family: Roboto;
+            font-size: 8px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.31;
+            letter-spacing: normal;
+            text-align: left;
+            color: #c1bebe;
+            outline: none;
+            border: hidden;
+            background-color: transparent;
+            cursor: pointer;
+            background-image: url(assets/images/assets_png/Senha@3x.png);
+            background-repeat: no-repeat;
+            background-size: 7px 8px;
+            background-position-y: 50%;
+            padding-left: 14px;
+        }
+
+        .sair {
+            text-decoration: none;
+            margin-bottom: 3%;
+            width: 82px;
+            height: 10.5px;
+            font-family: Roboto;
+            font-size: 8px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.31;
+            letter-spacing: normal;
+            text-align: left;
+            color: #c1bebe;
+            outline: none;
+            border: hidden;
+            background-color: transparent;
+            cursor: pointer;
+            background-image: url(assets/images/assets_png/Sair@3x.png);
+            background-repeat: no-repeat;
+            background-size: 7px 8px;
+            background-position-y: 50%;
+            padding-left: 14px;
+        }
+
+        .logout {
+            margin-top: 14%;
+            display: grid;
+            margin-left: 19%;
+        }
+
 
 
 
@@ -1243,12 +1351,11 @@
             </div>
             <div class="Marina">
                 <button class="Marina_btn" on="tap:sidebar-right.toggle">
-                    <p>Marina</p>
-                    <amp-img style="margin-left: 15px;" src="assets/images/assets_png/menina1.png" width="30px"
-                        height="30px" alt=""></amp-img>
+                    <div><span id="nome"></span></div>
+                    <amp-img id="foto_perfil" style="margin-left: 15px;" src="assets/images/assets_png/menina1.png"
+                        width="30px" height="30px" alt=""></amp-img>
                     </amp-img>
                 </button>
-
             </div>
         </div>
         <!-- -----------lightbox-------- -->
@@ -1301,78 +1408,119 @@
 
         <div class="welcome">
             <div>
-                <p class="Bem-vindo-de-volta-Marina-Wedderhoff">Bem vindo de volta</p>
-                <p class="text-style-4">Marina
-                    Wedderhoff</p>
-                <p class="Contribuio-da-comunidade-Ceviche-de-peixe-branco-Por-Michel-Filipe ">Contribuição da
-                    comunidade:<br>
-                    Ceviche de peixe branco</p>
-                <p class="text-style-3">Por
-                    Michel
-                    Filipe</p>
-            </div>
-            <div class="louis_painel">
-                <div class="louis">
-                    <figure>
-                        <amp-img src="assets/images/louis-hansel-ZwpX0AJ7GV8-unsplash@3x.png" width="225px"
-                            height="180px" layout="fixed" alt="louis-hansel">
-                            <figcaption class="Retangulo-12">
-                                <button id="modal-btn" on="tap:my-lightbox" class="louisBtn">
-                                    <div style="display: flex;">
-                                        <amp-img class="Caminho-14" src="assets/images/assets_png/Seta_direita@3x.png"
-                                            width="10px" height="10px" alt="">
-                                        </amp-img>
-                                        <p class="Ver-foto">Ver foto</p>
-                                    </div>
-                                </button>
-                            </figcaption>
-                        </amp-img>
-                    </figure>
+                <div id="bem-vindo" class="Bem-vindo-de-volta-Marina-Wedderhoff">Bem vindo de volta</p>
+                    <div id="sobrenome" class="text-style-4">Marina
+                        Wedderhoff</div>
+                    <p class="Contribuio-da-comunidade-Ceviche-de-peixe-branco-Por-Michel-Filipe ">Contribuição da
+                        comunidade:<br>
+                        Ceviche de peixe branco</p>
+                    <p class="text-style-3">Por
+                        Michel
+                        Filipe</p>
+                </div>
+                <div class="louis_painel">
+                    <div class="louis">
+                        <figure>
+                            <amp-img src="assets/images/louis-hansel-ZwpX0AJ7GV8-unsplash@3x.png" width="225px"
+                                height="180px" layout="fixed" alt="louis-hansel">
+                                <figcaption class="Retangulo-12">
+                                    <button id="modal-btn" on="tap:my-lightbox" class="louisBtn">
+                                        <div style="display: flex;">
+                                            <amp-img class="Caminho-14"
+                                                src="assets/images/assets_png/Seta_direita@3x.png" width="10px"
+                                                height="10px" alt="">
+                                            </amp-img>
+                                            <p class="Ver-foto">Ver foto</p>
+                                        </div>
+                                    </button>
+                                </figcaption>
+                            </amp-img>
+                        </figure>
+                    </div>
                 </div>
             </div>
-        </div>
 
     </header>
 
-    <amp-sidebar id="sidebar-right" class="sample-sidebar" layout="nodisplay" side="right">
+    <script>
+        fetch('https://uinames.com/api/?ext&region=random')
+            .then((response) => {
+                return response.json();
+            })
+            .then((uinames) => {
+                document.getElementById("nome").innerHTML = uinames.nome,
+                    document.getElementById("sobrenome").innerHTML = uinames + '' + uinames.surname;
 
-        <section>
+                const gender = uinames.gender;
+                switch (gender) {
+                    case "male":
+                        document.getElementById("bem-vindo").innerHTML = "Bem Vindo de volta";
+                        break;
+                    default:
+                        document.getElementById("bem-vindo").innerHTML = "Bem Vindo de volta"
+                }console.log(gender)
+
+                const perfil = uinames.gender;
+                switch (perfil) {
+                    case "male":
+                        document.getElementById("foto_perfil").src = ("assets/images/assets_png/menina1.png");
+                        break;
+                    default:
+                        document.getElementById("foto_perfil").src = ("assets/images/assets_png/menina1.png");
+                }console.log(perfil)
+
+                document.getElementById("receitanome").innerHTML = uinames + '' + uinames.surname;
+                document.getElementById("email").innerHTML = uinames.email,
+                    document.getElementById("telefone").innerHTML = uinames.phone
+            })
+    </script>
+
+
+
+    <amp-sidebar id="sidebar-right" class="sample-sidebar" layout="nodisplay" side="right">
+        <section id="perfil">
             <div class="nav-item">
                 <button class="btn-fechar" on="tap:sidebar-right.close">
                     <p class="Fechar">Fechar</p>
                 </button>
             </div>
-
-
-
             <div class="nav-item-1">
-                <button class="btn-user">
-                    <p class="Ethan-Gomez">Ethan Gomez</p>
-                </button>
-            </div>
+                <amp-img id="foto_perfil" class="foto" alt="Mariana" src="assets/images/assets_png/menino.png"
+                    width="20" height="20">
+                </amp-img>
+                <div class="Ethan-Gomez"><span id="nome"></span></div>
 
+                <!-- <button id="" class="btn-user"></button> -->
+
+            </div>
             <div class="nav-item-2">
                 <button class="btn-mail">
                     <p class="p-mail">ethangomez@example.com</p>
                 </button>
             </div>
-
             <div class="nav-item-3">
                 <button class="btn-fone">
                     <p class="p-fone">(951) 117 3743</p>
                 </button>
             </div>
-
             <div class="nav-item-4">
                 <p class="Plano-mensal">Plano Mensal</p>
                 <p class="dias-restantes">16 dias restantes</p>
             </div>
 
-            <!-- <p>Initial content that can be modified from JavaScript</p> -->
+            <div class="Retngulo-17">
+                <div class="Retngulo-18"></div>
+            </div>
+            <button class="Retngulo-19">
+                <p class="Assinar-plano-anual">Assinar plano anual</p>
+            </button>
 
+            <div class="logout">
+                <a href="#" class="reportar">Reportar bug ou abuso</a>
+                <a href="#" class="alterar">Alterar sua senha</a>
+                <a href="#" class="sair">Sair</a>
+            </div>
 
-            <div class="Retngulo-17"></div>
-            <div class="Retngulo-18"></div>
             </amp-script>
 
 
@@ -1429,12 +1577,11 @@
                     </div>
                 </div>
 
-                <div class="">
-                    <div class="">
-                        <button class="Retangulo-5"></button>
-                        <button class="Retangulo-6"></button>
-                    </div>
+                <div>
+                    <button class="Retangulo-5"></button>
+                    <button class="Retangulo-6"></button>
                 </div>
+
             </div>
         </div>
 
