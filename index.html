@@ -7,7 +7,9 @@
     <meta name="description" content="This is the AMP Boilerplate.">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+
     <!-- Import other AMP Extensions here -->
+
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
@@ -20,6 +22,11 @@
     <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
     <script async custom-element="amp-social-share"
         src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+
+
+
 
 
 
@@ -31,10 +38,6 @@
             --lipstick: #e82147;
             --white: white;
         }
-
-        /* .conteudo {
-            height: 50vh;
-        } */
 
         .Text-Style {
             font-family: PlayfairDisplay;
@@ -189,6 +192,25 @@
             text-align: left;
             color: var(--lipstick);
             padding-right: 50px;
+        }
+
+        .Marina_btn {
+            display: flex;
+            width: auto;
+            height: 33px;
+            font-family: Roboto;
+            font-size: 8px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.31;
+            letter-spacing: normal;
+            text-align: left;
+            color: var(--lipstick);
+            padding-right: 50px;
+            background-color: #ffdbbc;
+            border: hidden;
+            outline: none;
         }
 
         .Retngulo-4 {
@@ -647,92 +669,111 @@
             background-position-y: 25%;
         }
 
-        /* fim gastronomico */
+        .amp-carousel-button {
+            background-color: white;
+            box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+            border-radius: 16.5px;
+            height: 30px;
+            width: 30px;
+        }
 
+        #mundo-gast h2 {
+            margin-bottom: 60px;
+        }
 
+        #mundo-gast .amp-carousel-button {
+            opacity: 0;
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* gastronomico2 */
-        .cozinha_off {
-            padding-left: 47%;
-            width: 51.5px;
-            height: 21.5px;
-            font-family: PlayfairDisplay;
-            font-size: 16px;
+        #view {
+            width: 225px;
+            height: 64px;
+            float: left;
             font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.34;
-            letter-spacing: normal;
-            text-align: left;
-            color: #969090;
-        }
-
-        .cozinha_hover {
-            color: var(--lipstick);
-        }
-
-        .cozinha_on {
-            color: var(--lipstick);
-        }
-
-        .patisserie_off {
-            padding-left: 47%;
-            width: 51.5px;
-            height: 21.5px;
-            font-family: PlayfairDisplay;
             font-size: 16px;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.34;
-            letter-spacing: normal;
-            text-align: left;
-            color: #969090;
+            margin-right: 10px;
         }
 
-        .patisserie_hover {
-            color: var(--lipstick);
-        }
-
-        .patisserie_on {
-            color: var(--lipstick);
-        }
-
-        .drinks_off {
-            padding-left: 47%;
-            width: 51.5px;
-            height: 21.5px;
+        .itens {
+            border: solid 0.5px #f0f0f0;
+            background-color: var(--white);
+            color: #a19b9b;
+            margin-bottom: 10px;
+            box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0);
+            padding: 23px 10px 23px 100px;
             font-family: PlayfairDisplay;
-            font-size: 16px;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.34;
-            letter-spacing: normal;
-            text-align: left;
-            color: #969090;
         }
 
-        .drinks_hover {
+
+
+        amp-selector [option][selected] {
+            cursor: pointer;
+            box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.16);
+            outline: none;
             color: var(--lipstick);
         }
 
-        .drinks_on {
-            color: var(--lipstick);
+        .selector-carousel {
+            display: flex;
+            justify-content: center;
         }
+
+        .itens:hover {
+            color: var(--lipstick);
+            border-color: var(--lipstick);
+            box-shadow: 0 5px 25px 0 #fff;
+        }
+
+        .cozinha .itens {
+            background: url('assets/Cozinha.png') no-repeat;
+            background-position: 55px center;
+        }
+
+        .cozinha .itens:hover,
+        .cozinha amp-selector [option][selected] {
+            background-image: url('assets/images/assets_png/Cozinha_active.png');
+        }
+
+        .patisseria .itens {
+            background-image: url('assets/images/assets_png/Patisserie.png') no-repeat;
+            background-position: 55px center;
+        }
+
+        .patisseria .itens:hover {
+            background-image: url('assets/images/assets_png/Patisserie_active.png');
+            background-repeat: no-repeat;
+        }
+
+        .drink .itens {
+            background: url('assets/images/assets_png/Drinks.png') no-repeat;
+            background-position: 55px center;
+        }
+
+        .drink .itens:hover {
+            background-image: url('assets/images/assets_png/Drinks_active.png')
+        }
+
+        #selector_p {
+            width: 480px;
+            float: right;
+            height: 303px;
+        }
+
+        #selector_p img {
+            object-fit: cover;
+        }
+
+        .amp-carousel-slide>.i-amphtml-replaced-content {
+            object-fit: cover !important;
+        }
+
+
+
+
+
+
+
+
 
 
 
@@ -760,6 +801,10 @@
             object-fit: contain;
         }
 
+        .sebastian_m {
+            margin-top: 15px;
+        }
+
         .button_img {
             display: flex;
             justify-content: center;
@@ -785,41 +830,11 @@
             background-color: white;
         }
 
-        .retangulo-cozinha {
-            width: 225px;
-            height: 64.5px;
-            border: solid 0.5px #f0f0f0;
-            background-color: white;
-            background-image: url(assets/images/assets_png/Cozinha.png);
-            background-repeat: no-repeat;
-            background-size: 32px 32px;
-            background-position-x: 33%;
-            background-position-y: 50%;
-        }
 
-        .retangulo-patisserie {
-            width: 225px;
-            height: 64.5px;
-            border: solid 0.5px #f0f0f0;
-            background-color: white;
-            background-image: url(assets/images/assets_png/Patisserie.png);
-            background-repeat: no-repeat;
-            background-size: 32px 32px;
-            background-position-x: 33%;
-            background-position-y: 50%;
-        }
 
-        .retangulo-drinks {
-            width: 225px;
-            height: 64.5px;
-            border: solid 0.5px #f0f0f0;
-            background-color: white;
-            background-image: url(assets/images/assets_png/Drinks.png);
-            background-repeat: no-repeat;
-            background-size: 32px 32px;
-            background-position-x: 33%;
-            background-position-y: 50%;
-        }
+
+
+
 
         .pdg_ret {
             padding-bottom: 10px;
@@ -827,6 +842,7 @@
 
         .pdgr_ret {
             padding-right: 10px;
+            margin-top: 16px;
         }
 
         /* fim gastronomico2 */
@@ -931,15 +947,224 @@
         .social-share {
             margin-top: 22px;
         }
-    </style>
+
+        .teste-carros {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* side-bar */
+        .sample-sidebar {
+            width: 44%;
+        }
+
+        .Ethan-Gomez {
+            width: 73.5px;
+            height: 16px;
+            font-family: PlayfairDisplay;
+            font-size: 12px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-align: left;
+            color: #e82147;
+        }
+
+        .Fechar {
+            margin-right: 30px;
+            width: 24.5px;
+            height: 10.5px;
+            font-family: Roboto;
+            font-size: 8px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 0.31;
+            letter-spacing: normal;
+            text-align: left;
+            color: #000000;
+            padding-left: 16px;
+        }
+
+        .p-mail {
+            width: 100.5px;
+            height: 10.5px;
+            font-family: Roboto;
+            font-size: 8px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.31;
+            letter-spacing: normal;
+            text-align: left;
+            color: #000000;
+        }
+
+        .p-fone {
+            width: 100.5px;
+            height: 10.5px;
+            font-family: Roboto;
+            font-size: 8px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.31;
+            letter-spacing: normal;
+            text-align: left;
+            color: #000000;
+        }
+
+        .btn-fechar {
+            margin-right: 30px;
+            width: 15.6px;
+            height: 15.6px;
+            outline: none;
+            border: hidden;
+            background-color: transparent;
+            cursor: pointer;
+            background-image: url("assets/images/assets_png/Fechar@3x.png");
+            background-repeat: no-repeat;
+            background-size: 15px 15px;
+            background-position-x: 33%;
+            background-position-y: 50%;
+        }
+
+        .btn-user {
+            padding-left: 52px;
+            width: 196px;
+            height: 46px;
+            outline: none;
+            border: hidden;
+            background-color: transparent;
+            cursor: pointer;
+            background-image: url(assets/images/assets_png/menina1.png);
+            background-repeat: no-repeat;
+            background-size: 46px 46px;
+            background-position-x: 0%;
+        }
+
+        .btn-mail {
+            padding-left: 30px;
+            width: 196px;
+            height: 20px;
+            outline: none;
+            border: hidden;
+            background-color: transparent;
+            cursor: pointer;
+            background-image: url(assets/images/assets_svg/Email.svg);
+            background-repeat: no-repeat;
+            background-size: 9.5px 7px;
+            background-position-x: 7%;
+            background-position-y: 72%;
+
+        }
+
+        .btn-fone {
+            padding-left: 30px;
+            width: 196px;
+            height: 20px;
+            outline: none;
+            border: hidden;
+            background-color: transparent;
+            cursor: pointer;
+            background-image: url(assets/images/assets_svg/Telefone.svg);
+            background-repeat: no-repeat;
+            background-size: 9px 9px;
+            background-position-x: 7%;
+            background-position-y: 84%;
+        }
+
+        .Plano-mensal {
+            width: 99px;
+            height: 21.5px;
+            font-family: PlayfairDisplay;
+            font-size: 16px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.34;
+            letter-spacing: normal;
+            text-align: left;
+            color: #141414;
+        }
+
+        .dias-restantes {
+            font-family: Roboto;
+            font-size: 8.5px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 4.35;
+            letter-spacing: normal;
+            text-align: left;
+            color: #141414;
+            padding-left: 7%;
+
+        }
+
+        .nav-item {
+            display: flex;
+            height: 15px;
+            margin-top: 48.5px;
+            margin-left: 16%;
+            margin-bottom: 46.6px;
+        }
+
+        .nav-item-1 {
+            display: flex;
+            height: 46px;
+            margin-left: 15%;
+            margin-bottom: 30.5px;
+        }
+
+        .nav-item-2 {
+            display: flex;
+            height: 10.5px;
+            margin-left: 14%;
+            margin-bottom: 8.5px;
+        }
+
+        .nav-item-3 {
+            display: flex;
+            height: 20px;
+            margin-left: 14%;
+            margin-bottom: 30.5px;
+        }
+
+        .nav-item-4 {
+            display: flex;
+            margin-left: 16%;
+            margin-bottom: 9px;
+        }
+
+        .Retngulo-17 {
+            width: 231.5px;
+            height: 9px;
+            border-radius: 12px;
+            background-color: #e8e8e8;
+            margin-left: 16%;
+
+        }
+
+        .Retngulo-18 {
+            position: absolute;
+            width: 130.5px;
+            height: 9px;
+            border-radius: 12px;
+            background-color: #e82147;
+            margin-left: 16%;
+            top: 85%;
+        }
 
 
-    <style amp-boilerplate>
-        body {
+
+        style amp-boilerplate>body {
             -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
             -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
             -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both;
         }
 
         @-webkit-keyframes -amp-start {
@@ -1017,10 +1242,12 @@
                 <input class="Retangulo-1" type="text" placeholder="pesquise alguma receita">
             </div>
             <div class="Marina">
-                <p>Marina</p>
-                <amp-img style="margin-left: 15px;" src="assets/images/assets_png/menina1.png" width="30px"
-                    height="30px" alt=""></amp-img>
-                </amp-img>
+                <button class="Marina_btn" on="tap:sidebar-right.toggle">
+                    <p>Marina</p>
+                    <amp-img style="margin-left: 15px;" src="assets/images/assets_png/menina1.png" width="30px"
+                        height="30px" alt=""></amp-img>
+                    </amp-img>
+                </button>
 
             </div>
         </div>
@@ -1107,6 +1334,55 @@
 
     </header>
 
+    <amp-sidebar id="sidebar-right" class="sample-sidebar" layout="nodisplay" side="right">
+
+        <section>
+            <div class="nav-item">
+                <button class="btn-fechar" on="tap:sidebar-right.close">
+                    <p class="Fechar">Fechar</p>
+                </button>
+            </div>
+
+
+
+            <div class="nav-item-1">
+                <button class="btn-user">
+                    <p class="Ethan-Gomez">Ethan Gomez</p>
+                </button>
+            </div>
+
+            <div class="nav-item-2">
+                <button class="btn-mail">
+                    <p class="p-mail">ethangomez@example.com</p>
+                </button>
+            </div>
+
+            <div class="nav-item-3">
+                <button class="btn-fone">
+                    <p class="p-fone">(951) 117 3743</p>
+                </button>
+            </div>
+
+            <div class="nav-item-4">
+                <p class="Plano-mensal">Plano Mensal</p>
+                <p class="dias-restantes">16 dias restantes</p>
+            </div>
+
+            <!-- <p>Initial content that can be modified from JavaScript</p> -->
+
+
+            <div class="Retngulo-17"></div>
+            <div class="Retngulo-18"></div>
+            </amp-script>
+
+
+
+
+
+        </section>
+
+    </amp-sidebar>
+
     <article class="conteudo">
         <!-- fim Experimente -->
         <div>
@@ -1161,60 +1437,45 @@
                 </div>
             </div>
         </div>
-        <!-- fim receitas -->
 
-        <!-- espaçador -->
         <div class="espaçador">
             <amp-img class="elemento_503x" src="assets/images/assets_png/Elemento_5@3x.png" width="79.5" height="8.5"
                 layout="fixed" alt="elemento 530">
             </amp-img>
         </div>
-        <!-- fim espaçador -->
 
-        <!-- Entre no mundo gastronômico -->
-        <div class="mundo">
-            <div class="espaçador2"></div>
-            <div class="gastronomico">
-                <p>Entre no mundo gastronômico</p>
-            </div>
-        </div>
-        <!-- fim Entre no mundo gastronômico -->
+        <div id="mundo-gast">
+            <div class="mundo1"></div>
+            <div class="mundo2"></div>
+            <h2 style="text-align: center;">Entre no mundo gastronômico</h2>
+            <main class="selector-carousel">
 
 
-        <div class="button_img">
-            <div class="pdgr_ret">
-                <div class="pdg_ret">
-                    <button class="retangulo-cozinha">
-                        <p class="cozinha_off">Cozinha</p>
-                    </button>
-
-                </div>
-                <div class="pdg_ret">
-                    <button class="retangulo-patisserie">
-                        <p class="patisserie_off">Patisserie</p>
-                    </button>
-                </div>
-                <div class="">
-                    <button class="retangulo-drinks">
-                        <p class="drinks_off">Drinks</p>
-                    </button>
-                </div>
-            </div>
-
-
-            <div class="">
-                <!-- png  || jpg-->
-                <div class="">
-                    <amp-img class="sebastian"
-                        src="assets/images/sebastian-coman-photography-dacM7egRw0Y-unsplash@3x.png" width="957"
-                        height="641" layout="responsive" alt="">
-
+                <amp-selector id="view" class="selector-view" on="select:selector_p.goToSlide(index=event.targetOption)"
+                    layout="container">
+                    <div class="cozinha">
+                        <div class="itens" option="0" selected>Cozinha</div>
+                    </div>
+                    <div class="patisseria">
+                        <div class="itens" option="1">Patisseria</div>
+                    </div>
+                    <div class="drink">
+                        <div class="itens" option="2">Drink</div>
+                    </div>
+                </amp-selector>
+                <amp-carousel id="selector_p" width="319" height="213" layout="fixed" type="slides">
+                    <amp-img style="object-fit: cover!important;" src="assets/images/Cozinha.jpg" width="319"
+                        height="213" layout="fill" alt="cozinha">
                     </amp-img>
-                </div>
-            </div>
+                    <amp-img src="assets/images/Patisserie.jpg" width="319" height="213" layout="fill" alt="patisserie">
+                    </amp-img>
+                    <amp-img src="assets/images/Drink.jpg" width="319" height="213" layout="fill" alt="drink">
+                    </amp-img>
+                </amp-carousel>
+            </main>
         </div>
-    </article>
 
+    </article>
 
     <footer>
         <div class="rodape">
