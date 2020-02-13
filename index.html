@@ -9,9 +9,10 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
     <!-- Import other AMP Extensions here -->
-
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- amp components -->
     <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
     <script async custom-element="amp-image-lightbox"
         src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
@@ -27,13 +28,7 @@
 
 
 
-
-
-
-
-
     <style amp-custom>
-        /* Add your styles here */
         :root {
             --lipstick: #e82147;
             --white: white;
@@ -245,19 +240,7 @@
             background-color: var(--lipstick);
         }
 
-        .Bem-vindo-de-volta-Marina-Wedderhoff {
-            width: 266.5px;
-            height: 0px;
-            font-family: PlayfairDisplay;
-            font-size: 28px;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.34;
-            letter-spacing: normal;
-            text-align: left;
-            color: #000000;
-        }
+
 
         .Contribuio-da-comunidade-Ceviche-de-peixe-branco-Por-Michel-Filipe {
             width: 158px;
@@ -301,6 +284,7 @@
         }
 
         .stars {
+            padding-left: 7px;
             margin-top: 2px;
 
         }
@@ -637,7 +621,7 @@
 
         .espaçador {
             text-align: center;
-            height: 13vh;
+            height: 18vh;
         }
 
         .espaçador2 {
@@ -716,6 +700,11 @@
         .selector-carousel {
             display: flex;
             justify-content: center;
+            background-image: url(assets/images/assets_png/Elemento_6@3x.png);
+            background-repeat: no-repeat;
+            background-size: 84px 84px;
+            background-position-x: 90%;
+            background-position-y: 57%;
         }
 
         .itens:hover {
@@ -725,17 +714,20 @@
         }
 
         .cozinha .itens {
-            background: url('assets/Cozinha.png') no-repeat;
+            background: url('assets/images/assets_png/Cozinha.png');
+            background-repeat: no-repeat;
             background-position: 55px center;
         }
 
-        .cozinha .itens:hover,
-        .cozinha amp-selector [option][selected] {
-            background-image: url('assets/images/assets_png/Cozinha_active.png');
+
+        .patisseria .itens:hover,
+        .patisseria amp-selector [option][selected] {
+            background-image: url('assets/images/assets_png/Patisserie_active.png');
         }
 
         .patisseria .itens {
-            background-image: url('assets/images/assets_png/Patisserie.png') no-repeat;
+            background-image: url('assets/images/assets_png/Patisserie.png');
+            background-repeat: no-repeat;
             background-position: 55px center;
         }
 
@@ -745,7 +737,8 @@
         }
 
         .drink .itens {
-            background: url('assets/images/assets_png/Drinks.png') no-repeat;
+            background: url('assets/images/assets_png/Drinks.png');
+            background-repeat: no-repeat;
             background-position: 55px center;
         }
 
@@ -763,37 +756,9 @@
             object-fit: cover;
         }
 
-        .amp-carousel-slide>.i-amphtml-replaced-content {
-            object-fit: cover !important;
+        .amp-carousel-slide {
+            object-fit: cover;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         .sebastian {
             width: 319px;
@@ -959,7 +924,8 @@
         }
 
         .Ethan-Gomez {
-            width: 73.5px;
+            padding-top: 8px;
+            width: 125.5px;
             height: 16px;
             font-family: PlayfairDisplay;
             font-size: 12px;
@@ -970,6 +936,7 @@
             letter-spacing: normal;
             text-align: left;
             color: #e82147;
+            padding-left: 1%;
         }
 
         .Fechar {
@@ -1107,9 +1074,9 @@
         .nav-item {
             display: flex;
             height: 15px;
-            margin-top: 48.5px;
-            margin-left: 16%;
-            margin-bottom: 46.6px;
+            margin-top: 6%;
+            margin-left: 15%;
+            margin-bottom: 6%;
         }
 
         .nav-item-1 {
@@ -1265,14 +1232,44 @@
             margin-left: 19%;
         }
 
+        .welcome {
+            display: flex;
+        }
 
+        .de-volta {
+            padding-top: 10%;
+            width: 266.5px;
+            height: 15%;
+            font-family: PlayfairDisplay;
+            font-size: 28px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.34;
+            letter-spacing: normal;
+            text-align: left;
+            color: #000000;
+        }
 
+        .container-michael {
+            margin-top: 21%;
+        }
 
-        style amp-boilerplate>body {
+        .nomeale {
+            padding-right: 12px;
+            padding-top: 7px;
+        }
+
+        .display-flex {
+            display: flex;
+        }
+    </style>
+    <style amp-boilerplate>
+        body {
             -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
             -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
             -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-            animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
         }
 
         @-webkit-keyframes -amp-start {
@@ -1337,23 +1334,21 @@
 
     <link rel="canonical" href=".">
     <title>Cookfy</title>
+
+
 </head>
 
 <body>
 
     <header class="Retangulo-2">
         <div class="Cookfy">
-            <div class="logo_top">
-
-            </div>
-            <div>
-                <input class="Retangulo-1" type="text" placeholder="pesquise alguma receita">
-            </div>
+            <div class="logo_top"></div>
+            <div><input class="Retangulo-1" type="text" placeholder="pesquise alguma receita"></div>
             <div class="Marina">
                 <button class="Marina_btn" on="tap:sidebar-right.toggle">
-                    <div><span id="nome"></span></div>
-                    <amp-img id="foto_perfil" style="margin-left: 15px;" src="assets/images/assets_png/menina1.png"
-                        width="30px" height="30px" alt=""></amp-img>
+                    <div class="nomeale"><span id="nome"></span></div>
+                    <amp-img id="foto_perfil" src="assets/images/assets_png/menina1.png" width="30px" height="30px"
+                        alt="">
                     </amp-img>
                 </button>
             </div>
@@ -1388,11 +1383,9 @@
                                 peixe tem que estar bem fresco. Esse prato peruano pode ser feito com salmão, camarões e
                                 alguns
                                 contam até com manga e abacate, e o tradicional é preparado com peixe branco.</p>
-                            <div style="display: flex;">
+                            <div class="display-flex">
                                 <button class="Retngulo-957">
                                     <p class="curtir">curtir</p>
-                                    <!-- <amp-img src="assets/images/assets_png/Like@3x.png" width="7px" height="6px" alt="">
-                                </amp-img> -->
                                 </button>
                                 <amp-img class="Caminho-13" src="assets/images/assets_png/Seta_direita@3x.png"
                                     width="10px" height="10px" alt="">
@@ -1408,69 +1401,70 @@
 
         <div class="welcome">
             <div>
-                <div id="bem-vindo" class="Bem-vindo-de-volta-Marina-Wedderhoff">Bem vindo de volta</p>
-                    <div id="sobrenome" class="text-style-4">Marina
-                        Wedderhoff</div>
+                <div id="bem-vindo" class="de-volta">Bem vinda de volta</div>
+                <span id="sobrenome" class="text-style-4"></span>
+                <div class="container-michael">
                     <p class="Contribuio-da-comunidade-Ceviche-de-peixe-branco-Por-Michel-Filipe ">Contribuição da
-                        comunidade:<br>
-                        Ceviche de peixe branco</p>
-                    <p class="text-style-3">Por
-                        Michel
-                        Filipe</p>
+                        comunidade:<br>Ceviche de peixe branco</p>
+                    <p class="text-style-3">Por Michel Filipe</p>
                 </div>
-                <div class="louis_painel">
-                    <div class="louis">
-                        <figure>
-                            <amp-img src="assets/images/louis-hansel-ZwpX0AJ7GV8-unsplash@3x.png" width="225px"
-                                height="180px" layout="fixed" alt="louis-hansel">
-                                <figcaption class="Retangulo-12">
-                                    <button id="modal-btn" on="tap:my-lightbox" class="louisBtn">
-                                        <div style="display: flex;">
-                                            <amp-img class="Caminho-14"
-                                                src="assets/images/assets_png/Seta_direita@3x.png" width="10px"
-                                                height="10px" alt="">
-                                            </amp-img>
-                                            <p class="Ver-foto">Ver foto</p>
-                                        </div>
-                                    </button>
-                                </figcaption>
-                            </amp-img>
-                        </figure>
-                    </div>
+            </div>
+            <div class="louis_painel">
+                <div class="louis">
+                    <figure>
+                        <amp-img src="assets/images/louis-hansel-ZwpX0AJ7GV8-unsplash.png" width="225px" height="180px"
+                            layout="fixed" alt="louis-hansel">
+                            <figcaption class="Retangulo-12">
+                                <button id="modal-btn" on="tap:my-lightbox" class="louisBtn">
+                                    <div style="display: flex;">
+                                        <amp-img class="Caminho-14" src="assets/images/assets_png/Seta_direita@3x.png"
+                                            width="10px" height="10px" alt="">
+                                        </amp-img>
+                                        <p class="Ver-foto">Ver foto</p>
+                                    </div>
+                                </button>
+                            </figcaption>
+                        </amp-img>
+                    </figure>
                 </div>
             </div>
 
     </header>
 
     <script>
-        fetch('https://uinames.com/api/?ext&region=random')
+        fetch('https://uinames.com/api/?ext&region=brazil')
             .then((response) => {
                 return response.json();
             })
+            // .then(function (data) {
+            //     console.log(data);
+            // })
             .then((uinames) => {
-                document.getElementById("nome").innerHTML = uinames.nome,
-                    document.getElementById("sobrenome").innerHTML = uinames + '' + uinames.surname;
+                document.getElementById("nome").innerHTML = uinames.name,
+                    document.getElementById("sobrenome").innerHTML = uinames.name + ' ' + uinames.surname;
 
-                const gender = uinames.gender;
+                var gender = uinames.gender;
                 switch (gender) {
                     case "male":
                         document.getElementById("bem-vindo").innerHTML = "Bem Vindo de volta";
                         break;
                     default:
-                        document.getElementById("bem-vindo").innerHTML = "Bem Vindo de volta"
-                }console.log(gender)
+                        document.getElementById("bem-vindo").innerHTML = "Bem Vinda de volta";
+                }
+                // console.log(gender)
 
-                const perfil = uinames.gender;
+                var perfil = uinames.gender;
                 switch (perfil) {
                     case "male":
-                        document.getElementById("foto_perfil").src = ("assets/images/assets_png/menina1.png");
+                        document.getElementById("foto_perfil").src = ("assets/images/assets_png/menino.png");
                         break;
                     default:
-                        document.getElementById("foto_perfil").src = ("assets/images/assets_png/menina1.png");
+                        document.getElementById("foto_perfil").src = ("assets/images/assets_png/menino.png");
                 }console.log(perfil)
 
-                document.getElementById("receitanome").innerHTML = uinames + '' + uinames.surname;
-                document.getElementById("email").innerHTML = uinames.email,
+
+                document.getElementById("sidebarsobrenome").innerHTML = uinames.name + ' ' + uinames.surname,
+                    document.getElementById("email").innerHTML = uinames.email,
                     document.getElementById("telefone").innerHTML = uinames.phone
             })
     </script>
@@ -1485,22 +1479,18 @@
                 </button>
             </div>
             <div class="nav-item-1">
-                <amp-img id="foto_perfil" class="foto" alt="Mariana" src="assets/images/assets_png/menino.png"
-                    width="20" height="20">
+                <amp-img id="foto_perfil" src="assets/images/assets_png/menina1.png" width="30px" height="30px" alt="">
                 </amp-img>
-                <div class="Ethan-Gomez"><span id="nome"></span></div>
-
-                <!-- <button id="" class="btn-user"></button> -->
-
+                <div class="Ethan-Gomez"><span id="sidebarsobrenome"></span></div>
             </div>
             <div class="nav-item-2">
                 <button class="btn-mail">
-                    <p class="p-mail">ethangomez@example.com</p>
+                    <p id="email" class="p-mail"></p>
                 </button>
             </div>
             <div class="nav-item-3">
                 <button class="btn-fone">
-                    <p class="p-fone">(951) 117 3743</p>
+                    <p id="telefone" class="p-fone"></p>
                 </button>
             </div>
             <div class="nav-item-4">
@@ -1514,34 +1504,20 @@
             <button class="Retngulo-19">
                 <p class="Assinar-plano-anual">Assinar plano anual</p>
             </button>
-
             <div class="logout">
                 <a href="#" class="reportar">Reportar bug ou abuso</a>
                 <a href="#" class="alterar">Alterar sua senha</a>
                 <a href="#" class="sair">Sair</a>
             </div>
-
-            </amp-script>
-
-
-
-
-
         </section>
-
     </amp-sidebar>
 
     <article class="conteudo">
-        <!-- fim Experimente -->
         <div>
             <div class="Experimente">
-                <p>
-                    Experimente alguma<br>das últimas receitas
-                </p>
+                <p>Experimente alguma<br>das últimas receitas</p>
             </div>
         </div>
-        <!-- fim Experimente -->
-
         <!-- receitas -->
         <div class="receitas">
             <div class="box_iogurte">
@@ -1576,12 +1552,10 @@
                         </amp-img>
                     </div>
                 </div>
-
                 <div>
                     <button class="Retangulo-5"></button>
                     <button class="Retangulo-6"></button>
                 </div>
-
             </div>
         </div>
 
@@ -1597,31 +1571,30 @@
             <h2 style="text-align: center;">Entre no mundo gastronômico</h2>
             <main class="selector-carousel">
 
-
                 <amp-selector id="view" class="selector-view" on="select:selector_p.goToSlide(index=event.targetOption)"
                     layout="container">
                     <div class="cozinha">
-                        <div class="itens" option="0" selected>Cozinha</div>
+                        <div class="itens" option="2">Cozinha</div>
                     </div>
                     <div class="patisseria">
-                        <div class="itens" option="1">Patisseria</div>
+                        <div class="itens" option="0" selected>Patisseria</div>
                     </div>
                     <div class="drink">
-                        <div class="itens" option="2">Drink</div>
+                        <div class="itens" option="1">Drink</div>
                     </div>
                 </amp-selector>
+
                 <amp-carousel id="selector_p" width="319" height="213" layout="fixed" type="slides">
-                    <amp-img style="object-fit: cover!important;" src="assets/images/Cozinha.jpg" width="319"
-                        height="213" layout="fill" alt="cozinha">
-                    </amp-img>
                     <amp-img src="assets/images/Patisserie.jpg" width="319" height="213" layout="fill" alt="patisserie">
                     </amp-img>
                     <amp-img src="assets/images/Drink.jpg" width="319" height="213" layout="fill" alt="drink">
                     </amp-img>
+                    <amp-img src="assets/images/Cozinha.jpg" width="319" height="213" layout="fill" alt="cozinha">
+                    </amp-img>
                 </amp-carousel>
+
             </main>
         </div>
-
     </article>
 
     <footer>
