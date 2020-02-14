@@ -9,6 +9,8 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
     <!-- Import other AMP Extensions here -->
+
+    <link rel="shortcut icon" href="caminhodoarquivo/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
@@ -937,7 +939,7 @@
         }
 
         .social-share amp-social-share[type='Twitter'] {
-            background-image: url(assets/images/assets_svg/twitter.svg);
+            background-image: url(assets/images/assets_svg/Twitter.svg);
         }
 
         .social-share amp-social-share[type='Twitter']:hover {
@@ -1503,42 +1505,12 @@
             })
             // .then(function (data) {
             //     console.log(data);
-            // })  
+            // })
+
             .then((uinames) => {
                 document.getElementById("nome").innerHTML = uinames.name,
-                    document.getElementById("sobrenome").innerHTML = uinames.name + ' ' + uinames.surname;
-
-                var gender = uinames.gender;
-                switch (gender) {
-                    case "male":
-                        document.getElementById("bem-vindo").innerHTML = "Bem Vindo de volta";
-
-                        break;
-                    default:
-                        document.getElementById("bem-vindo").innerHTML = "Bem Vinda de volta"
-
-                }
-                console.log(gender);
-
-                function minhaFuncao() {
-                    var gender = uinames.gender;
-                    // var img = window.document.getElementById('foto-perfil')
-                    if (gender == 'male') {
-                        document.getElementById("foto-perfil").src = "assets/images/assets_png/menino.png";
-                    } else if (gender == 'female') {
-                        document.getElementById("foto_perfil").src = "assets/images/assets_png/menina.png";
-                    }
-                }
-                // switch (gender) {
-                //     case "male":
-                //         document.getElementById("foto_perfil").src = "assets/images/assets_png/menino.png";
-                //         break;
-                //     default:
-                //         document.getElementById("foto_perfil").src = "assets/images/assets_png/menina.png";
-                // }
-                // console.log(perfil)
-
-                document.getElementById("sidebarsobrenome").innerHTML = uinames.name + ' ' + uinames.surname,
+                    document.getElementById("sobrenome").innerHTML = uinames.name + ' ' + uinames.surname,
+                    document.getElementById("sidebarsobrenome").innerHTML = uinames.name + ' ' + uinames.surname,
                     document.getElementById("email").innerHTML = uinames.email,
                     document.getElementById("telefone").innerHTML = uinames.phone
             })
