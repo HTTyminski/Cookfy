@@ -46,6 +46,27 @@
             }
         }
 
+        @keyframes bounce {
+
+            0%,
+            20%,
+            60%,
+            100% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+
+            40% {
+                -webkit-transform: translateY(-20px);
+                transform: translateY(-20px);
+            }
+
+            80% {
+                -webkit-transform: translateY(-10px);
+                transform: translateY(-20px);
+            }
+        }
+
         .pulse {
             animation: pulse 0.7s;
             margin: 0 auto;
@@ -307,15 +328,14 @@
             left: 50px;
         }
 
-
-
-
         figure:hover .louisBtn {
+            animation: bounce 1s;
             display: block;
             cursor: pointer;
         }
 
         figure:hover .receitaBtn {
+            animation: bounce 1s;
             display: block;
             cursor: pointer;
         }
@@ -331,12 +351,6 @@
             width: 100%;
             height: 42px;
         }
-
-
-
-
-
-
 
         .amp-carousel-button {
             background-color: white;
@@ -433,6 +447,7 @@
         }
 
         .Retngulo-957 {
+            cursor: pointer;
             margin-top: 30px;
             width: 65.5px;
             height: 24px;
@@ -448,6 +463,7 @@
         }
 
         .curtir {
+            cursor: pointer;
             padding-left: 23px;
             width: 17px;
             height: 9.5px;
@@ -463,6 +479,7 @@
         }
 
         .oPeixe {
+            margin-bottom: 20px;
             padding-top: 30px;
             width: 131.5px;
             height: 32px;
@@ -495,6 +512,7 @@
         }
 
         .ceviche {
+            margin-bottom: 20px;
             width: 180.5px;
             height: 139.5px;
             font-family: Roboto;
@@ -509,6 +527,8 @@
         }
 
         .Caminho-13 {
+            margin-top: 10px;
+            cursor: pointer;
             margin-top: 17%;
             margin-left: 15px;
             width: 10px;
@@ -521,6 +541,7 @@
         }
 
         .Ver-receita {
+            cursor: pointer;
             width: 58.5px;
             font-family: Roboto;
             font-size: 12px;
@@ -1331,6 +1352,10 @@
             display: flex;
             justify-content: center;
         }
+
+        #sidebar-right {
+            background-color: white;
+        }
     </style>
     <style amp-boilerplate>
         body {
@@ -1516,8 +1541,6 @@
             })
     </script>
 
-
-
     <amp-sidebar id="sidebar-right" class="sample-sidebar" layout="nodisplay" side="right">
         <section id="perfil">
             <div class="nav-item">
@@ -1566,11 +1589,109 @@
             </div>
         </div>
         <!-- receitas -->
-
-
         <div class="alinhar">
-
             <amp-carousel width="600" height="246" layout="fixed" type="slides" delay="5000" autoplay>
+                <div class="receitas pulse">
+                    <figure>
+                        <div class="box_iogurte">
+                            <amp-img src="assets/images/iogurte_recortado.png" width="319" height="155" layout="fixed"
+                                alt="iogurte">
+                                <button id="modal-btn" on="tap:my-lightbox" class="receitaBtn">
+                                    <div class="display-flex">
+                                        <amp-img class="Caminho-14" src="assets/images/assets_png/Seta_direita@3x.png"
+                                            width="10px" height="10px" alt="">
+                                        </amp-img>
+                                        <p class="Ver-foto">Ver foto</p>
+                                    </div>
+                                </button>
+                            </amp-img>
+                        </div>
+                    </figure>
+
+                    <div>
+                        <div>
+                            <p class="Adicionado">adicionado a 2 dias</p>
+                        </div>
+                        <div>
+                            <p class="Iogurte">Iogurte de fruta crocante</p>
+                        </div>
+                        <div class="display_flex">
+                            <p class="Dificil">Dificil</p>
+                            <div class="stars">
+                                <amp-img src="assets/images/assets_png/Estrela@3x.png" width="8" height="8"
+                                    layout="fixed" alt="estrela">
+                                </amp-img>
+                                <amp-img src="assets/images/assets_png/Estrela@3x.png" width="8" height="8"
+                                    layout="fixed" alt="estrela">
+                                </amp-img>
+                                <amp-img src="assets/images/assets_png/Estrela@3x.png" width="8" height="8"
+                                    layout="fixed" alt="estrela">
+                                </amp-img>
+                                <amp-img src="assets/images/assets_png/Estrela@3x.png" width="8" height="8"
+                                    layout="fixed" alt="estrela">
+                                </amp-img>
+                                <amp-img class="estrela_opct" src="assets/images/assets_png/Estrela@3x.png" width="8"
+                                    height="8" layout="fixed" alt="estrela">
+                                </amp-img>
+                            </div>
+                        </div>
+                        <!-- <div>
+                            <button class="Retangulo-5"></button>
+                            <button class="Retangulo-6"></button>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="receitas">
+                    <figure>
+                        <div class="box_iogurte">
+                            <amp-img src="assets/images/Sandwich.jpg" width="319" height="155" layout="fixed"
+                                alt="iogurte">
+                                <button id="modal-btn" on="tap:my-lightbox" class="receitaBtn">
+                                    <div class="display-flex">
+                                        <amp-img class="Caminho-14" src="assets/images/assets_png/Seta_direita@3x.png"
+                                            width="10px" height="10px" alt="">
+                                        </amp-img>
+                                        <p class="Ver-foto">Ver foto</p>
+                                    </div>
+                                </button>
+                            </amp-img>
+                        </div>
+                    </figure>
+
+                    <div>
+                        <div>
+                            <p class="Adicionado">adicionado a 5 dias</p>
+                        </div>
+                        <div>
+                            <p class="Iogurte">Sanduiche natural de frango com requeijão</p>
+                        </div>
+                        <div class="display_flex">
+                            <p class="Dificil">Facil</p>
+                            <div class="stars">
+                                <amp-img src="assets/images/assets_png/Estrela@3x.png" width="8" height="8"
+                                    layout="fixed" alt="estrela">
+                                </amp-img>
+                                <amp-img class="estrela_opct" src="assets/images/assets_png/Estrela@3x.png" width="8"
+                                    height="8" layout="fixed" alt="estrela">
+                                </amp-img>
+                                <amp-img class="estrela_opct" src="assets/images/assets_png/Estrela@3x.png" width="8"
+                                    height="8" layout="fixed" alt="estrela">
+                                </amp-img>
+                                <amp-img class="estrela_opct" src="assets/images/assets_png/Estrela@3x.png" width="8"
+                                    height="8" layout="fixed" alt="estrela">
+                                </amp-img>
+                                <amp-img class="estrela_opct" src="assets/images/assets_png/Estrela@3x.png" width="8"
+                                    height="8" layout="fixed" alt="estrela">
+                                </amp-img>
+                            </div>
+                        </div>
+                        <!-- <div>
+                            <button class="Retangulo-5"></button>
+                            <button class="Retangulo-6"></button>
+                        </div> -->
+                    </div>
+                </div>
 
                 <div class="receitas pulse">
                     <figure>
