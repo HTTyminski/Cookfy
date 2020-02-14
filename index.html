@@ -36,6 +36,58 @@
             --white: white;
         }
 
+        @-moz-document url-prefix() {
+            .text-style-3 {
+                color: #e82147;
+                width: 158px;
+                height: 18px;
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                letter-spacing: normal;
+                text-align: left;
+                margin-top: 30px;
+            }
+
+            .Adicionado {
+                padding-top: 14px;
+                width: 81.5px;
+                height: 10.5px;
+                font-family: Roboto;
+                font-size: 8px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.31;
+                letter-spacing: normal;
+                text-align: left;
+                color: var(--lipstick);
+            }
+
+            .Retangulo-1 {
+                padding-left: 21px;
+                width: 366px;
+                height: 30px;
+                border-radius: 16.5px;
+                box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+                background-color: white;
+                border: none;
+                background-image: url(assets/images/assets_svg/Lupa.svg);
+                background-repeat: no-repeat;
+                background-size: 17px 17px;
+                background-position-x: 94%;
+                background-position-y: 49%;
+                outline: none;
+                padding-top: 11px;
+                padding-bottom: 0px;
+            }
+
+        }
+
+
+
         @keyframes pulse {
             0% {
                 transform: scale(1);
@@ -203,7 +255,6 @@
             font-weight: bold;
             font-stretch: normal;
             font-style: normal;
-            line-height: 1.33;
             letter-spacing: normal;
             text-align: left;
         }
@@ -1426,6 +1477,55 @@
                 -ms-animation: none;
                 animation: none
             }
+
+            @-moz-document url-prefix() {
+                .text-style-3 {
+                    color: #e82147;
+                    width: 158px;
+                    height: 18px;
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    text-align: left;
+                    margin-top: 30px;
+                }
+
+                .Adicionado {
+                    padding-top: 14px;
+                    width: 81.5px;
+                    height: 10.5px;
+                    font-family: Roboto;
+                    font-size: 8px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.31;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: var(--lipstick);
+                }
+
+                .Retangulo-1 {
+                    padding-left: 21px;
+                    width: 366px;
+                    height: 21px;
+                    border-radius: 16.5px;
+                    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+                    background-color: white;
+                    border: none;
+                    background-image: url(assets/images/assets_svg/Lupa.svg);
+                    background-repeat: no-repeat;
+                    background-size: 17px 17px;
+                    background-position-x: 94%;
+                    background-position-y: 49%;
+                    outline: none;
+                    padding-top: 11px;
+                }
+
+            }
         </style>
     </noscript>
 
@@ -1542,6 +1642,7 @@
                     document.getElementById("sidebarsobrenome").innerHTML = uinames.name + ' ' + uinames.surname,
                     document.getElementById("email").innerHTML = uinames.email,
                     document.getElementById("telefone").innerHTML = uinames.phone
+
             })
     </script>
 
