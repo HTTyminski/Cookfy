@@ -439,12 +439,14 @@
         }
 
         .amp-carousel-button-prev:hover {
+            cursor: pointer;
             background-color: var(--lipstick);
             background-image: url(assets/images/assets_svg/arrow_left_photoshop.gif);
             background-repeat: no-repeat;
         }
 
         .amp-carousel-button-next:hover {
+            cursor: pointer;
             background-color: var(--lipstick);
             background-image: url(assets/images/assets_svg/arrow_photoshop.gif);
             background-repeat: no-repeat;
@@ -1218,6 +1220,7 @@
         }
 
         .nav-item-1 {
+            cursor: pointer;
             display: flex;
             height: 46px;
             margin-left: 15%;
@@ -1411,6 +1414,10 @@
         #sidebar-right {
             background-color: white;
         }
+
+        #fotoperfil {
+            cursor: pointer;
+        }
     </style>
     <style amp-boilerplate>
         body {
@@ -1544,8 +1551,8 @@
             <div class="Marina">
                 <button class="Marina_btn" on="tap:sidebar-right.toggle">
                     <div class="nomeale"><span id="nome"></span></div>
-                    <amp-img id="foto-perfil" class="pulse-perfil" src="assets/images/assets_png/menina.png"
-                        width="35px" height="35px" alt="">
+                    <amp-img id="fotoperfil" class="pulse-perfil" src="assets/images/assets_png/menina.png" width="35px"
+                        height="35px" alt="">
                     </amp-img>
                 </button>
             </div>
@@ -1597,7 +1604,7 @@
 
         <div class="welcome">
             <div>
-                <div id="bem-vindo" class="de-volta">Bem vinda de volta</div>
+                <div id="bemvindo" class="de-volta"></div>
                 <span id="sobrenome" class="text-style-4"></span>
                 <div class="container-michael">
                     <p class="Contribuio-da-comunidade-Ceviche-de-peixe-branco-Por-Michel-Filipe ">Contribuição da
@@ -1643,6 +1650,16 @@
                     document.getElementById("email").innerHTML = uinames.email,
                     document.getElementById("telefone").innerHTML = uinames.phone
 
+                var genero = uinames.gender;
+                if (genero != "female") {
+                    document.getElementById("fotoperfil").src = "assets/images/assets_png/menino.png";
+                    document.getElementById("bemvindo").innerHTML = "Bem vindo de volta";
+                } else if (genero != "male") {
+                    document.getElementById("fotoperfil").src = "assets/images/assets_png/menina.png";
+                    document.getElementById("bemvindo").innerHTML = "Bem vinda de volta";
+                }
+                console.log(genero);
+
             })
     </script>
 
@@ -1654,7 +1671,7 @@
                 </button>
             </div>
             <div class="nav-item-1">
-                <amp-img id="foto-perfil" src="assets/images/assets_png/menino.png" width="30px" height="30px" alt="">
+                <amp-img id="fotoperfil" src="assets/images/assets_png/menino.png" width="30px" height="30px" alt="">
                 </amp-img>
                 <div class="Ethan-Gomez"><span id="sidebarsobrenome"></span></div>
             </div>
